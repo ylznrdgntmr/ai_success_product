@@ -127,6 +127,12 @@ celerybeat.pid
 # SageMath parsed files
 *.sage.py
 
+# App-specific local data (never commit user credentials or uploads)
+.local_users.json
+.uploaded_images/
+.image_feature_cache/
+.i18n_cache/
+
 # Environments
 .env
 .venv
@@ -179,3 +185,4 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+Claude outputs/

@@ -1,0 +1,29 @@
+streamlit>=1.35.0
+pandas>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+scikit-learn>=1.3.0
+xgboost>=2.0.0
+lightgbm>=4.0.0
+plotly>=5.18.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+joblib>=1.3.0
+google-genai>=0.1.1
+python-dotenv>=1.0.0
+reportlab>=4.0.0
+openpyxl>=3.1.0
+# Used for the Gemini SDK's own transport, and directly by this app to call
+# the Claude / DeepSeek / Qwen REST APIs (src/llm/providers.py) — required,
+# not optional, even if you skip the image-features block below.
+requests>=2.31.0
+
+# Not: E-posta/şifre girişi (src/utils/auth.py), çoklu dil (i18n.py) ve
+# tema (theme.py) modülleri sadece Python standart kütüphanesini kullanır —
+# bu üç yeni özellik için EK bir paket kurulumu gerekmez.
+
+# Opsiyonel: Sekme 3'teki "Görsel Özellikler" (ResNet50 + PCA) özelliği için.
+# Bu özelliği kullanmayacaksanız aşağıdaki iki satırı kaldırabilirsiniz —
+# uygulamanın geri kalanı bunlar kurulu olmadan da normal çalışır.
+tensorflow>=2.15.0
+Pillow>=10.0.0
